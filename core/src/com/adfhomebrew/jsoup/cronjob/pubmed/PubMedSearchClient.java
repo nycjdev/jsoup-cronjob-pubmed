@@ -19,6 +19,8 @@ public class PubMedSearchClient {
     List<Serializable> persistList = new ArrayList();
 
     public static void main(String[] args) {
+        //schedule a crontab with the following flags.
+        //java -cp "jsoup-cronjob-pubmed.jar:lib/*" com.adfhomebrew.jsoup.cronjob.pubmed.PubMedSearchClient
         new PubMedSearchClient();
     }
 
