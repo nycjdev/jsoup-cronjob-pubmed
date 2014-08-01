@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "\"jsoup_pubmed\"")
+@Table(name = "jsoup_pubmed")
 public class JsoupPubmed implements Serializable {
     private static final long serialVersionUID = 4145920814113663844L;
     @Id
@@ -18,8 +18,7 @@ public class JsoupPubmed implements Serializable {
     private int id;
     @Column(name = "num_of_results")
     private int num_of_results;
-    @Column(name = "scrape_time")
-    private Timestamp scrape_time;
+    
     @Column(name = "search_criteria")
     private String search_criteria;
 
@@ -45,14 +44,6 @@ public class JsoupPubmed implements Serializable {
 
     public void setNum_of_results(int num_of_results) {
         this.num_of_results = num_of_results;
-    }
-
-    public Timestamp getScrape_time() {
-        return scrape_time;
-    }
-
-    public void setScrape_time(Timestamp scrape_time) {
-        this.scrape_time = scrape_time;
     }
 
     public String getSearch_criteria() {
